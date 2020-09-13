@@ -2,6 +2,11 @@
 :docs: https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference
 :github: https://github.com/spring-projects/spring-boot
 
+== 此版本编译命令 (跳过编译失败的几个任务)
+----
+./gradlew build -x :spring-boot-project:spring-boot-tools:spring-boot-maven-plugin:intTest -x :spring-boot-project:spring-boot-tools:spring-boot-gradle-plugin:test -x :spring-boot-project:spring-boot-actuator-autoconfigure:javadoc
+----
+
 Spring Boot helps you to create Spring-powered, production-grade applications and
 services with absolute minimum fuss. It takes an opinionated view of the Spring platform
 so that new and existing users can quickly get to the bits they need.
