@@ -1,6 +1,0 @@
-rootProject.name = '1-spring-boot-learn'
-
-include 'my-first-spring-boot-starter'
-include 'webflux-demo1'
-
-
