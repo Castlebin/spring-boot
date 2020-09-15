@@ -4,7 +4,9 @@
 
 == 此版本编译命令 (跳过编译失败的几个任务)
 ----
-./gradlew build -x :spring-boot-project:spring-boot-tools:spring-boot-maven-plugin:intTest -x :spring-boot-project:spring-boot-tools:spring-boot-gradle-plugin:test -x :spring-boot-project:spring-boot-actuator-autoconfigure:javadoc -x test
+
+./gradlew build -x javadoc -x intTest -x test -x asciidoctor -x asciidoctorPdf -x checkFormatIntTest -x checkFormatMa in -x checkFormatTest -x zip
+
 ----
 
 Spring Boot helps you to create Spring-powered, production-grade applications and
